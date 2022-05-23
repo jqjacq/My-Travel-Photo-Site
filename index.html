@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab62147ef2.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacqueline's Travel Photos</title>
+</head>
+<body>
+    <header id="headcontainer">
+        <h1 class="heading">Jacqueline's Travel <br> Photos
+        <i class="camera fa-solid fa-camera fa-2x"></i> <br>  
+        <button onClick="displayList()"class="viewlink" id="viewlist">
+            <a href="#listofplace">List of Places</a></button> <br>
+        <button onClick="displayPhotos()" class="viewlink" id="viewphoto">
+            <a href="#photos">Photos</a></button> <br>
+        <button onClick="contacts()" class="viewlink" id="viewcontact">
+            <a href="#contact">Contact </a></button> <br>
+            <div id="contact">
+                <p id="contactme"></p>
+                    Name: <input type="text" id="name" maxlength="50" name="name" 
+                placeholder = "John Doe"> <br><br>
+                    Email: <input type="email" id="email" maxlength="50" name="email" 
+                placeholder= john.doe@gmail.com> <br><br>
+                    Phone: <input type="tel" id="number" maxlength="20" name="phonenumber"
+                placeholder="123-456-7890" 
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <br><br>
+                    Reason of contact: <input type="text" maxlength="30" id="message" name="msg"
+                placeholder="Max Length = 30"> <br><br>
+                <input type="submit" id="submit">
+            </div>
+        </h1>
+        <img class="headphoto" src="img/headphoto.jpg">
+    </header>
+
+    <section id="photos">
+    <div class="container">
+        <h3 id="internationalphoto">International Photos</h3>  
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>
+                <li data-target="#myCarousel" data-slide-to="6"></li>
+              </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                      <img src="img/international/Taiwan Night Market, 2016.JPG" alt="Taiwan 2016">
+                      <div class="carousel-caption">Taiwan Night Market 2016</div>
+                </div>
+                <div class="item">
+                  <img src="img/international/Japan, Tokyo 2017.jpg" alt="Japan 2017">
+                  <div class="carousel-caption">Japan Torii Gate 2017</div>
+                </div>
+                <div class="item">
+                  <img src="img/international/Ireland, 2017.JPG" alt="Ireland 2017">
+                  <div class="carousel-caption">Ireland Beautiful Architectures 2017</div>
+                </div>
+                <div class="item">
+                    <img src="img/international/Singapore Tree, 2018.jpg" alt="Singapore 2018">
+                    <div class="carousel-caption">Singapore Garden by the Bay 2018</div>
+                </div>
+                <div class="item">
+                    <img src="img/international/Hunan Nature China, 2018.jpg" alt="China 2018">
+                    <div class="carousel-caption">China Hunan 2018</div>
+                </div>
+                <div class="item">
+                    <img src="img/international/Toronto, Canada 2015.JPG" alt="Toronto 2015">
+                    <div class="carousel-caption">Toronto Sign 2018</div>
+                </div>
+                <div class="item">
+                    <img src="img/international/South Korea, Jeonju 2018.JPG" alt="South Korea 2018">
+                    <div class="carousel-caption">South Korea, Jeonju 2018</div>
+                </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span></a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span></a>
+            </div>
+        </div>
+     </div>
+    </section>
+
+    <section id="listofplace">
+    <h1 id="listhead">Places Jacqueline has travelled to
+        <button id = "hideList" onClick="hideList()"> Hide List</button>
+    </h1>
+        <div id="usalist">
+            <ol><p class="places">United States</p>
+                <li>New York</li>
+                <li>New Jersey</li>
+                <li>Delaware</li>
+                <li>Pennsylvania</li>
+                <li>Wisconsin</li>
+                <li>Illinois</li>
+                <li>Maryland</li>
+                <li>Washington</li>
+                <li>California</li>
+                <li>Massachusett</li>
+                <li>Georgia</li>
+                <li>Texas</li>
+                <li>Connecticut</li>
+                <li>North Carolina</li>
+                <li>Rhode Island</li>
+                <li>Hawaii</li>
+                <li>Florida</li>
+                <li>Tennessee</li>
+                <li>Maine</li>
+                <li>Indiana</li>
+                <li>Colorado</li>
+                <li>Iowa</li>
+                <li>Nebraska</li>
+                <li>Nevada</li>
+                <li>Ohio</li>
+                <li>Utah</li>
+                <li>Wyoming</li>
+                <li>Puerto Rico <br> (U.S territory)</li>
+            </ol>
+        </div>
+        <div id="internationalist"><br>
+            <ol><p class="places">International</p>
+                <li>Canada</li>
+                <li>Japan</li>
+                <li>Ireland</li>
+                <li>Taiwan</li>
+                <li>China</li>
+                <li>South Korea</li>
+            </ol>
+        </div>
+    </section>
+        
+    <footer>
+        Copyright © 2022 ·  All photos are taken by Jacqueline Xu
+    </footer>
+</body>
+</html>
