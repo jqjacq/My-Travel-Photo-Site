@@ -4,6 +4,7 @@ body {
     background-size: auto;
     background-repeat: no-repeat;
     /*Background Img: https://unsplash.com/photos/vC8wj_Kphak*/
+    color: black;
 }
 button a {
     list-style-type: none;
@@ -63,20 +64,32 @@ footer {
     padding-left: 50px;
     font-weight: bold;
     text-align: center;
+    background-color: rgba(250, 209, 77, 0.2);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .places {
+    display: block;
     font-weight: bold;
-    text-decoration: underline;
-    padding-bottom: 10px;
+    padding: 0 10px 10px 10px;
+    font-size: 20px;
+    text-decoration: overline underline;
 }
 .items {
     width: 100%;
 }
 #contact {
     display: none;
+    background-color: rgba(250, 209, 77, 0.2);
 }
 #usalist {
-    column-count: 2;
+   column-count: 2;
+   padding: 0 50px;
+   font-weight: bold;
+}
+#internationalist {
+    padding: 0 50px;
+    font-weight: bold;
 }
 #headcontainer {
     display: flex;
@@ -84,15 +97,24 @@ footer {
 #internationalphoto {
     text-align: center;
     font-weight: bold;
+    background-color: rgba(250, 209, 77, 0.2);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 #listofplace {
     display: none;
+    background-color: rgba(250, 209, 77, 0.2);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 #photos {
     display: none;
 }
 #hidePhotos, #hideList {
     font-size: 15px;
+}
+#submit {
+    padding: 10px;
 }
 @media only screen and (max-width: 890px) {
     .heading, .viewlink {
@@ -110,5 +132,4 @@ footer {
         padding: 3px;
         width: 125px;
     }
-    
 }
